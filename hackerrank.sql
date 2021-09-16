@@ -8,3 +8,5 @@ ORDER BY tot DESC, ci.city_name, pr.product_name;
 SELECT (months*salary) as earnings, COUNT(*) FROM employee
 GROUP BY earnings
 ORDER BY earnings DESC LIMIT 1;
+
+SELECT ROUND(SUM(lat_n),2), ROUND(SUM(long_w),2) FROM station;
